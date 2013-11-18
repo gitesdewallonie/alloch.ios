@@ -1,0 +1,73 @@
+/* 
+  Localizable.strings
+  AlloChambre
+*/
+
+"URLLang" = "fr";
+
+// ==========================================
+// ======== Main View =======================
+"MainMenuTitle" = "Allo chambre d'hôtes !";
+"GeoLocate Me" = "Géolocalise-moi";
+"Lookup" = "Rechercher";
+"Address" = "Adresse / Ville";
+"Credits" = "Crédits";
+"CrWallonie" = "avec le soutien du Commissariat général au Tourisme de Wallonie";
+"CrEurope" = "Fonds européen agricole pour le développement rural. L'Europe investit dans les zones rurales.";
+"CrWallonieBruxelles" = "Wallonie-Bruxelles tourisme";
+
+// Main Menu Alerts Localization
+
+// 1) Validation Alert (VA)
+"VATitle" = "Oups !";
+"VAMessage" = "Vous devez entrer une adresse ou une ville";
+"VADismissButton" = "Ok";
+
+// 2) ConnectionError (CE) Alert
+"CETitle" = "Erreur !";
+"CEMessage" = "Veuillez vérifier votre connexion à Internet avant de faire une recherche";
+"CEDismissButton" = "Ok";
+
+// 3) GeolocationError (GE) Alert
+"GETitle" = "Oups !";
+"GEMessage" = "Vous devez activer la géolocalisation dans les réglages et y autoriser l'application";
+"GEDismissButton" = "Ok";
+// ==========================================
+
+
+// ==========================================
+// ======== Result View =====================
+"ResultViewTitle" = "Résultats";
+"NoResults" = "Aucun résultat trouvé";
+"HomeButtonTitle" = "Accueil";
+"Loading" = "Chargement";
+"Locating" = "Localisation";
+// ==========================================
+
+
+// ==========================================
+// ======== GroupedRooms View ===============
+"GroupedRoomViewTitle" = "Chambres groupées";
+// ==========================================
+
+
+// ==========================================
+// ======== Detail View =====================
+"DetailViewTitle" = "Détails";
+// Detail View Alerts Localization
+// 1) Call Confirmation Alert (CCA)
+"CCATitle" = "Appeler";
+"CCADismissButton" = "Non";
+"CCAOkButtonTitle" = "Oui";
+// 2) No Phone Number (NPN) Alert
+"NPNTitle" = "Erreur";
+"NPNessage" = "Il n'y a pas de numéro de téléphone pour cet hébergement";
+"NPNDismissButton" = "Ok";
+
+// ==========================================
+
+
+// ==========================================
+// ======== Route View ===============
+"RouteViewTitle" = "Itinéraire";
+// ==========================================

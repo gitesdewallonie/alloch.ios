@@ -1,0 +1,73 @@
+/* 
+  Localizable.strings
+  AlloChambre
+*/
+
+"URLLang" = "en";
+
+// ==========================================
+// ======== Main View =======================
+"MainMenuTitle" = "Allo chambre d'hôtes !";
+"GeoLocate Me" = "Geolocate me";
+"Lookup" = "Search";
+"Address" = "Address / City";
+"Credits" = "Credits";
+"CrWallonie" = "with the support of the Commissariat général au Tourisme de Wallonie, the Tourist Board of Wallonia";
+"CrEurope" = "European Agricultural Fund for Rural Development.\nEurope invests in rural areas.";
+"CrWallonieBruxelles" = "Wallonie-Bruxelles tourisme";
+
+// Main Menu Alerts Localization
+
+// 1) Validation Alert (VA)
+"VATitle" = "Oops !";
+"VAMessage" = "You must enter an address or a city";
+"VADismissButton" = "Ok";
+
+// 2) ConnectionError (CE) Alert
+"CETitle" = "Connection Error !";
+"CEMessage" = "Please check your Internet connection before searching";
+"CEDismissButton" = "Ok";
+
+// 3) GeolocationError (GE) Alert
+"GETitle" = "Oops !";
+"GEMessage" = "Please activate geolocation in settings and authorize application";
+"GEDismissButton" = "Ok";
+// ==========================================
+
+
+// ==========================================
+// ======== Result View =====================
+"ResultViewTitle" = "Results";
+"NoResults" = "No result found";
+"HomeButtonTitle" = "Home";
+"Loading" = "Loading";
+"Locating" = "Locating";
+// ==========================================
+
+
+// ==========================================
+// ======== GroupedRooms View ===============
+"GroupedRoomViewTitle" = "Grouped Rooms";
+// ==========================================
+
+
+// ==========================================
+// ======== Detail View =====================
+"DetailViewTitle" = "Details";
+// Detail View Alerts Localization
+// 1) Call Confirmation Alert (CCA)
+"CCATitle" = "Call";
+"CCADismissButton" = "No";
+"CCAOkButtonTitle" = "Yes";
+// 2) No Phone Number (NPN) Alert
+"NPNTitle" = "Error";
+"NPNessage" = "No phone specified for this accomodation.";
+"NPNDismissButton" = "Ok";
+
+// ==========================================
+
+
+// ==========================================
+// ======== Route View ===============
+"RouteViewTitle" = "Route";
+// ==========================================

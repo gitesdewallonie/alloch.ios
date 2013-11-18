@@ -1,0 +1,73 @@
+/* 
+  Localizable.strings
+  AlloChambre
+*/
+
+"URLLang" = "nl";
+
+// ==========================================
+// ======== Main View =======================
+"MainMenuTitle" = "Allo chambre d'hôtes !";
+"GeoLocate Me" = "Geolokaliseer mij";
+"Lookup" = "Zoek";
+"Address" = "Addres / Plaats";
+"Credits" = "Kredieten";
+"CrWallonie" = "met de steun van het Commissariaat-generaal voor Toerisme van Wallonië";
+"CrEurope" = "Europees Landbouwfonds voor Plattelandsontwikkeling. Europa investeert in de plattelandsgebieden.";
+"CrWallonieBruxelles" = "Wallonie-Bruxelles tourisme";
+
+// Main Menu Alerts Localization
+
+// 1) Validation Alert (VA)
+"VATitle" = "Fout !";
+"VAMessage" = "U moet een adres of een plaats invoeren";
+"VADismissButton" = "Ok";
+
+// 2) ConnectionError (CE) Alert
+"CETitle" = "Verbindingsfout !";
+"CEMessage" = "Controleer eerst uw internetverbinding alvorens een zoekopdracht te doen";
+"CEDismissButton" = "Ok";
+
+// 3) GeolocationError (GE) Alert
+"GETitle" = "Fout !";
+"GEMessage" = "Gelieve de geolokalisatie te activeren in de instellingen en de toepassing toe te staan";
+"GEDismissButton" = "Ok";
+// ==========================================
+
+
+// ==========================================
+// ======== Result View =====================
+"ResultViewTitle" = "Resultaten";
+"NoResults" = "Geen resultaat gevonden";
+"HomeButtonTitle" = "Home";
+"Loading" = "Loading";
+"Locating" = "Locating";
+// ==========================================
+
+
+// ==========================================
+// ======== GroupedRooms View ===============
+"GroupedRoomViewTitle" = "Gegroepeerde gastenkamers";
+// ==========================================
+
+
+// ==========================================
+// ======== Detail View =====================
+"DetailViewTitle" = "Details";
+// Detail View Alerts Localization
+// 1) Call Confirmation Alert (CCA)
+"CCATitle" = "Oproepen";
+"CCADismissButton" = "Nee";
+"CCAOkButtonTitle" = "Ja";
+// 2) No Phone Number (NPN) Alert
+"NPNTitle" = "Oops !";
+"NPNessage" = "Geen telefoonnummer voor dit logiesadres";
+"NPNDismissButton" = "Ok";
+
+// ==========================================
+
+
+// ==========================================
+// ======== Route View ===============
+"RouteViewTitle" = "Route";
+// ==========================================
