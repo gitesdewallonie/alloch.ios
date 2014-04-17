@@ -22,7 +22,7 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="B6v-ou-1Af">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="972"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="983"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="background_568.png" id="mi1-G3-XM8">
@@ -121,7 +121,7 @@
                     </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="FEK-j0-lbu">
-                    <rect key="frame" x="0.0" y="524" width="320" height="448"/>
+                    <rect key="frame" x="0.0" y="524" width="320" height="459"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                 </imageView>
@@ -144,8 +144,8 @@
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Fonds européen agricole pour le développement rural. L'Europe investit dans les zones rurales." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" id="ueE-8Z-r55">
-                    <rect key="frame" x="0.0" y="919" width="320" height="44"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="                                       FEADER                                     Fonds européen agricole pour le développement rural. L'Europe investit dans les zones rurales." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="ueE-8Z-r55">
+                    <rect key="frame" x="0.0" y="919" width="320" height="54"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -189,7 +189,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ila-0P-5W7" userLabel="Button - Europe">
-                    <rect key="frame" x="11" y="839" width="298" height="118"/>
+                    <rect key="frame" x="11" y="839" width="298" height="134"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                     <state key="normal">
