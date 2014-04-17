@@ -7,6 +7,7 @@
 
 @implementation CreditsViewController
 @synthesize scrollView;
+@synthesize imageView;
 
 #pragma mark - Private Methods
 
@@ -38,20 +39,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    // ====================================================================================
-    // Setting Back Button
-    // UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Home"
-    //                                                                style:UIBarButtonItemStyleBordered
-    //                                                               target:self 
-    //                                                               action:@selector(goBack)];
-    // [self.navigationItem setLeftBarButtonItem:backButton];
-    // [backButton release];
-    // backButton = nil;
-    // ====================================================================================
-    
-    // Do any additional setup after loading the view from its nib.
-    [self.scrollView setContentSize:CGSizeMake(320, 480)];
+    if ([UIDeviceHardware IsDeviceHas4InchDisplay]) {
+        NSLog(@"Device has 4 inch display");
+        imageView.image = [UIImage imageNamed:@"Credits@4inch.png"];
+    }
 }
 
 - (void)viewDidUnload

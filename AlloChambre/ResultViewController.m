@@ -317,11 +317,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
-    [[self view] setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]]];
-
-    self.resultTableView.backgroundColor = [UIColor clearColor];
-
     self.title = NSLocalizedString(@"ResultViewTitle", nil);
     
     HUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
@@ -351,7 +346,6 @@
         [self.locationManager startUpdatingLocation];
 
     }
-    
 
 }
 
@@ -591,6 +585,54 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     [self goToAccomodation:indexPath.row];
 }
+
+/*
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ([cell respondsToSelector:@selector(tintColor)]) {
+        if (tableView == self.resultTableView) {    // self.tableview
+            CGFloat cornerRadius = 5.f;
+            cell.backgroundColor = UIColor.clearColor;
+            CAShapeLayer *layer = [[CAShapeLayer alloc] init];
+            CGMutablePathRef pathRef = CGPathCreateMutable();
+            CGRect bounds = CGRectInset(cell.bounds, 5, 0);
+            BOOL addLine = NO;
+            if (indexPath.row == 0 && indexPath.row == [tableView numberOfRowsInSection:indexPath.section]-1) {
+                CGPathAddRoundedRect(pathRef, nil, bounds, cornerRadius, cornerRadius);
+            } else if (indexPath.row == 0) {
+                CGPathMoveToPoint(pathRef, nil, CGRectGetMinX(bounds), CGRectGetMaxY(bounds));
+                CGPathAddArcToPoint(pathRef, nil, CGRectGetMinX(bounds), CGRectGetMinY(bounds), CGRectGetMidX(bounds), CGRectGetMinY(bounds), cornerRadius);
+                CGPathAddArcToPoint(pathRef, nil, CGRectGetMaxX(bounds), CGRectGetMinY(bounds), CGRectGetMaxX(bounds), CGRectGetMidY(bounds), cornerRadius);
+                CGPathAddLineToPoint(pathRef, nil, CGRectGetMaxX(bounds), CGRectGetMaxY(bounds));
+                addLine = YES;
+            } else if (indexPath.row == [tableView numberOfRowsInSection:indexPath.section]-1) {
+                CGPathMoveToPoint(pathRef, nil, CGRectGetMinX(bounds), CGRectGetMinY(bounds));
+                CGPathAddArcToPoint(pathRef, nil, CGRectGetMinX(bounds), CGRectGetMaxY(bounds), CGRectGetMidX(bounds), CGRectGetMaxY(bounds), cornerRadius);
+                CGPathAddArcToPoint(pathRef, nil, CGRectGetMaxX(bounds), CGRectGetMaxY(bounds), CGRectGetMaxX(bounds), CGRectGetMidY(bounds), cornerRadius);
+                CGPathAddLineToPoint(pathRef, nil, CGRectGetMaxX(bounds), CGRectGetMinY(bounds));
+            } else {
+                CGPathAddRect(pathRef, nil, bounds);
+                addLine = YES;
+            }
+            layer.path = pathRef;
+            CFRelease(pathRef);
+            layer.fillColor = [UIColor colorWithWhite:1.f alpha:0.8f].CGColor;
+            
+            if (addLine == YES) {
+                CALayer *lineLayer = [[CALayer alloc] init];
+                CGFloat lineHeight = (1.f / [UIScreen mainScreen].scale);
+                lineLayer.frame = CGRectMake(CGRectGetMinX(bounds)+5, bounds.size.height-lineHeight, bounds.size.width-5, lineHeight);
+                lineLayer.backgroundColor = tableView.separatorColor.CGColor;
+                [layer addSublayer:lineLayer];
+            }
+            UIView *testView = [[UIView alloc] initWithFrame:bounds];
+            [testView.layer insertSublayer:layer atIndex:0];
+            testView.backgroundColor = UIColor.clearColor;
+            cell.backgroundView = testView;
+        }
+    }
+}
+ */
 
 #pragma mark - AccomodationParserDelegate Methods
 

@@ -93,25 +93,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
-    // ====================================================================================
-    // Setting Back Button
-    // UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back"
-    //                                                                style:UIBarButtonItemStyleBordered
-    //                                                               target:self 
-    //                                                               action:@selector(goBack)];
-    // [self.navigationItem setLeftBarButtonItem:backButton];
-    // [backButton release];
-    // backButton = nil;
-    // ====================================================================================
-
-	// Create image from the desired pattern
-	// UIImage *pattern = [UIImage imageNamed:@"background.gif"];
-	// Set the image as a background pattern
-	// [[self view] setBackgroundColor:[UIColor colorWithPatternImage:pattern]];
-
-    [[self view] setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]]];
-
+    groupedTableView.backgroundView = nil;
     self.groupedTableView.backgroundColor = [UIColor clearColor];
     
     self.title = NSLocalizedString(@"GroupedRoomViewTitle", nil);

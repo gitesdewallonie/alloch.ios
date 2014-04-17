@@ -76,8 +76,12 @@
             if ([self validateTextField]) {
                 
                 // Creating Instance of ResultView with the String entered in SearchBox
+                NSString *nibName = @"ResultViewController";
+                if ([UIDeviceHardware IsDeviceHas4InchDisplay]) {
+                    nibName = @"ResultViewController_iPhone5";
+                }
                 ResultViewController *resultView = [[ResultViewController alloc] 
-                                                    initWithNibName:@"ResultViewController"
+                                                    initWithNibName:nibName//@"ResultViewController"
                                                     bundle:nil andSearchString:searchTF.text];
                 
                 
@@ -102,8 +106,12 @@
         } else {
             
             // Creating Instance of ResultView with the String entered in SearchBox
+            NSString *nibName = @"ResultViewController";
+            if ([UIDeviceHardware IsDeviceHas4InchDisplay]) {
+                nibName = @"ResultViewController_iPhone5";
+            }
             ResultViewController *resultView = [[ResultViewController alloc] 
-                                                initWithNibName:@"ResultViewController"
+                                                initWithNibName:nibName//@"ResultViewController"
                                                 bundle:nil andSearchString:nil];        
             
 			if ([searchTF isFirstResponder]) {
@@ -323,6 +331,7 @@
 - (IBAction)openCredits:(id)sender {
     CreditsViewController *cView = [[CreditsViewController alloc] initWithNibName:@"CreditsViewController"
                                                                            bundle:nil];
+    cView.view.frame=CGRectMake(cView.view.frame.origin.x, cView.view.frame.origin.y, cView.view.frame.size.width, cView.view.frame.size.height);
     [self.navigationController pushViewController:cView animated:YES];
     [cView release];
     cView = nil;

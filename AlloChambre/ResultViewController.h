@@ -11,6 +11,7 @@
 #import "IconDownloader.h"
 #import "MyLocation.h"
 #import <CoreLocation/CoreLocation.h>
+#import <QuartzCore/QuartzCore.h>
 
 #define METERS_PER_MILE 1609.344
 

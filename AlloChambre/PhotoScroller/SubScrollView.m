@@ -80,8 +80,6 @@
 		[self setClipsToBounds:YES];
 		[self setBouncesZoom:NO];
 		//[self setBounces:NO];
-		[self setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight  | UIViewAutoresizingFlexibleLeftMargin |
-         UIViewAutoresizingFlexibleRightMargin];
 		self.clipsToBounds = YES;
 		[self setCanCancelContentTouches:YES];
 		[self setMinimumZoomScale:1.0];
@@ -105,7 +103,6 @@
         _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0,0,self.frame.size.width, self.frame.size.height)];
         //[_imageView setBackgroundColor:[UIColor blueColor]];
         [_imageView setContentMode:UIViewContentModeScaleAspectFit];
-        [_imageView setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight];
         [self addSubview:_imageView];
         
         _activityView = [[UIActivityIndicatorView alloc] 

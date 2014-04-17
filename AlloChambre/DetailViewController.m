@@ -104,7 +104,12 @@
     [[self view] setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]]];
     self.title = NSLocalizedString(@"DetailViewTitle", nil);
     
-    _photoScroller = [[MainScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 436/2) andImagesArray:self.currentAccomodation.photosArray];
+    int size = 436;
+    if ([UIDeviceHardware IsDeviceHas4InchDisplay]) {
+        size = 524;
+    }
+    
+    _photoScroller = [[MainScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, size/2) andImagesArray:self.currentAccomodation.photosArray];
     [self.scrollView addSubview:_photoScroller];
     
     self.detailView.frame = CGRectMake(0, _photoScroller.frame.size.height, 320, self.detailView.frame.size.height);

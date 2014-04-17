@@ -220,9 +220,6 @@
         [self setClipsToBounds:YES];
         [self setDelegate:self];
         
-        [self setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight]; /* | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleLeftMargin |
-         UIViewAutoresizingFlexibleRightMargin];*/
-        
         maxPageNo = [imagesArray count];;
         currentTag = 1;
         
