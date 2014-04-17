@@ -23,7 +23,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <tableView clipsSubviews="YES" alpha="0.94999998807907104" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" sectionIndexMinimumDisplayRowCount="5" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="yFh-uY-JHd">
-                    <rect key="frame" x="0.0" y="228" width="320" height="296"/>
+                    <rect key="frame" x="0.0" y="304" width="320" height="220"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
@@ -32,7 +32,7 @@
                     </connections>
                 </tableView>
                 <textField hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="No results found" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="9cY-oF-keP">
-                    <rect key="frame" x="32" y="317" width="256" height="31"/>
+                    <rect key="frame" x="32" y="354" width="256" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.92549026010000002" green="0.92549026010000002" blue="0.92549026010000002" alpha="1" colorSpace="deviceRGB"/>
                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -40,11 +40,11 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="horizontal_bar.png" id="qhK-Qb-lan">
-                    <rect key="frame" x="0.0" y="214" width="320" height="16"/>
+                    <rect key="frame" x="0.0" y="294" width="320" height="16"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="5Bx-7e-HSo">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="214"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="293"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                 </mapView>
             </subviews>
