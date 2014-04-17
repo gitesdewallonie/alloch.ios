@@ -23,10 +23,16 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    self.viewController = [[[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil] autorelease];
+    NSString *nibName = @"MainViewController";
+    if ([UIDeviceHardware IsDeviceHas4InchDisplay]) {
+        NSLog(@"Device is iPhone 5");
+        nibName = @"MainViewController_iPhone5";
+    }
+    self.viewController = [[[MainViewController alloc] initWithNibName:nibName bundle:nil] autorelease];
     
     // Setting UP Main Navigation Controller for App
     UINavigationController *mainNavController = [[UINavigationController alloc] initWithRootViewController:self.viewController];
+    mainNavController.navigationBar.translucent = NO;
     [mainNavController.navigationBar setTintColor:kNavBarTintColor];
     
     self.window.rootViewController = mainNavController;
