@@ -40,8 +40,11 @@
 		04F357011523788900BF098A /* Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F357001523788900BF098A /* Placeholder.png */; };
 		04F357041523799D00BF098A /* MyLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F357031523799C00BF098A /* MyLocation.m */; };
 		04F357251523998500BF098A /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F357241523998500BF098A /* circle.png */; };
+		96CB25021AB85E1F0051A07A /* phone6.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CB25011AB85E1F0051A07A /* phone6.png */; };
+		96CB25051AB86CDB0051A07A /* main_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CB25041AB86CDB0051A07A /* main_logo.png */; };
+		96CB25071AB87CD20051A07A /* CreditsViewController_iPhone5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96CB25061AB87CD20051A07A /* CreditsViewController_iPhone5.xib */; };
 		A85514E018FAF4870066CA4C /* background_568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A85514DF18FAF4870066CA4C /* background_568@2x.png */; };
-		A85514E218FAF4AA0066CA4C /* Credits@4inch.png in Resources */ = {isa = PBXBuildFile; fileRef = A85514E118FAF4AA0066CA4C /* Credits@4inch.png */; };
+		A85514E218FAF4AA0066CA4C /* Credit-568.png in Resources */ = {isa = PBXBuildFile; fileRef = A85514E118FAF4AA0066CA4C /* Credit-568.png */; };
 		A85514E518FBBD1B0066CA4C /* UIDeviceHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = A85514E418FBBD1B0066CA4C /* UIDeviceHardware.m */; };
 		A85E8E4518F6BC1700F34D66 /* MainViewController_iPhone5.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85E8E4418F6BC1700F34D66 /* MainViewController_iPhone5.xib */; };
 		A85E8E4718F6BE3400F34D66 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A85E8E4618F6BE3400F34D66 /* Default-568h@2x.png */; };
@@ -174,8 +177,11 @@
 		04F357021523799C00BF098A /* MyLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLocation.h; sourceTree = "<group>"; };
 		04F357031523799C00BF098A /* MyLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLocation.m; sourceTree = "<group>"; };
 		04F357241523998500BF098A /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
+		96CB25011AB85E1F0051A07A /* phone6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = phone6.png; path = ../../../../Downloads/phone6.png; sourceTree = "<group>"; };
+		96CB25041AB86CDB0051A07A /* main_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_logo.png; path = "../../../../Desktop/GDW ANDROID GIT/alloch.android/res/drawable-hdpi/main_logo.png"; sourceTree = "<group>"; };
+		96CB25061AB87CD20051A07A /* CreditsViewController_iPhone5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreditsViewController_iPhone5.xib; sourceTree = "<group>"; };
 		A85514DF18FAF4870066CA4C /* background_568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background_568@2x.png"; sourceTree = "<group>"; };
-		A85514E118FAF4AA0066CA4C /* Credits@4inch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Credits@4inch.png"; sourceTree = "<group>"; };
+		A85514E118FAF4AA0066CA4C /* Credit-568.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Credit-568.png"; sourceTree = "<group>"; };
 		A85514E318FBBD1B0066CA4C /* UIDeviceHardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDeviceHardware.h; sourceTree = "<group>"; };
 		A85514E418FBBD1B0066CA4C /* UIDeviceHardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDeviceHardware.m; sourceTree = "<group>"; };
 		A85E8E4418F6BC1700F34D66 /* MainViewController_iPhone5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController_iPhone5.xib; sourceTree = "<group>"; };
@@ -364,6 +370,8 @@
 		042893DE15221E72001ADB96 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				96CB25041AB86CDB0051A07A /* main_logo.png */,
+				96CB25011AB85E1F0051A07A /* phone6.png */,
 				CE17E9141535C39F003A7F4F /* loupe.png */,
 				CE17E9151535C39F003A7F4F /* loupe@2x.png */,
 				CE8A30231535B88900DBD658 /* searchtext.png */,
@@ -377,6 +385,7 @@
 				A85514DF18FAF4870066CA4C /* background_568@2x.png */,
 				CEE18791152C433700F895E9 /* lecoq.png */,
 				CEBF5B0415357F07003F548A /* lecoq_reversed.png */,
+				A85514E118FAF4AA0066CA4C /* Credit-568.png */,
 				CEE1878F152C3E1100F895E9 /* logo.png */,
 				CEA3E74D1535B0EF000310AA /* logo@2x.png */,
 				CE8A30121535B28200DBD658 /* horizontal_bar.png */,
@@ -391,7 +400,6 @@
 				04F357001523788900BF098A /* Placeholder.png */,
 				CE31A4E3152C96B400D247C7 /* Credits.png */,
 				CE31A4E4152C96B400D247C7 /* Credits@2x.png */,
-				A85514E118FAF4AA0066CA4C /* Credits@4inch.png */,
 				042893EA15221EE7001ADB96 /* Default.png */,
 				042893EB15221EE7001ADB96 /* Default@2x.png */,
 				A85E8E4618F6BE3400F34D66 /* Default-568h@2x.png */,
@@ -540,6 +548,7 @@
 				042893F4152229F1001ADB96 /* CreditsViewController.h */,
 				042893F5152229F1001ADB96 /* CreditsViewController.m */,
 				042893F6152229F1001ADB96 /* CreditsViewController.xib */,
+				96CB25061AB87CD20051A07A /* CreditsViewController_iPhone5.xib */,
 			);
 			name = CreditsView;
 			sourceTree = "<group>";
@@ -693,6 +702,7 @@
 				F5DBB7DC1523227400294EF9 /* ResultViewController.xib in Resources */,
 				04F357011523788900BF098A /* Placeholder.png in Resources */,
 				04F357251523998500BF098A /* circle.png in Resources */,
+				96CB25071AB87CD20051A07A /* CreditsViewController_iPhone5.xib in Resources */,
 				F558B1E815246027005DD6A7 /* GroupedRoomsViewController.xib in Resources */,
 				F558B201152478CB005DD6A7 /* DetailViewController.xib in Resources */,
 				A8BBD6DD18FD130B00565CFA /* icon-80.png in Resources */,
@@ -706,7 +716,7 @@
 				F5138C381524A4A0005D20F8 /* lit1p.png in Resources */,
 				F5138C3A1524A4A0005D20F8 /* phonebtn.png in Resources */,
 				04EC69401526FFA9007C5726 /* RouteViewController.xib in Resources */,
-				A85514E218FAF4AA0066CA4C /* Credits@4inch.png in Resources */,
+				A85514E218FAF4AA0066CA4C /* Credit-568.png in Resources */,
 				04C96964152860A200FF37D6 /* Localizable.strings in Resources */,
 				04C9696E1528652100FF37D6 /* Entitlements.plist in Resources */,
 				04C1D614152AB32B0001FDCA /* pin.png in Resources */,
@@ -717,6 +727,7 @@
 				CE31A4E5152C96B400D247C7 /* Credits.png in Resources */,
 				CE31A4E6152C96B400D247C7 /* Credits@2x.png in Resources */,
 				CECF179E152CC43900EB8DB6 /* capacity.png in Resources */,
+				96CB25051AB86CDB0051A07A /* main_logo.png in Resources */,
 				CECF179F152CC43900EB8DB6 /* capacity@2x.png in Resources */,
 				CEBF5B0515357F07003F548A /* lecoq_reversed.png in Resources */,
 				A85E8E4518F6BC1700F34D66 /* MainViewController_iPhone5.xib in Resources */,
@@ -739,6 +750,7 @@
 				CEBFF61B1536BA1C00BA0CE5 /* capacitywhite@2x.png in Resources */,
 				CE0C404D155A65BE0003BE6C /* iconw2-57.png in Resources */,
 				CE0C404E155A65BE0003BE6C /* iconw2-114.png in Resources */,
+				96CB25021AB85E1F0051A07A /* phone6.png in Resources */,
 				CE0C404F155A65BE0003BE6C /* iconw2-512.png in Resources */,
 				CE0C4053155A65F20003BE6C /* pin_current.png in Resources */,
 				CE0C4054155A65F20003BE6C /* pin_current@2x.png in Resources */,
@@ -844,7 +856,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "675169F6-9231-4ED7-8C52-4E18423A12AA";
 				SDKROOT = iphoneos;
 			};
@@ -866,7 +878,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -924,7 +936,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0096DDFC-7222-4B66-9662-6BA50C94A998";
 				SDKROOT = iphoneos;
