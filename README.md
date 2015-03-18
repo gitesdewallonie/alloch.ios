@@ -7,7 +7,7 @@ URL in store : http://itunes.apple.com/be/app/allo-chambre-dhotes/id509470840?mt
 
 
 Credits
-=======
+-------
 
 This package was developed by `Affinitic team <https://github.com/affinitic>`_.
 
