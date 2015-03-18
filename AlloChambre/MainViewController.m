@@ -337,9 +337,6 @@
     CreditsViewController *cView  = [[CreditsViewController alloc]
                                         initWithNibName:nibName
                                         bundle:nil];
-    
-    //CreditsViewController *cView = [[CreditsViewController alloc] initWithNibName:@"CreditsViewController"
-     //                                                                      bundle:nil];
     cView.view.frame=CGRectMake(cView.view.frame.origin.x, cView.view.frame.origin.y, cView.view.frame.size.width, cView.view.frame.size.height);
     [self.navigationController pushViewController:cView animated:YES];
     [cView release];
