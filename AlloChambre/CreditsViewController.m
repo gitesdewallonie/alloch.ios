@@ -39,10 +39,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    if ([UIDeviceHardware IsDeviceHas4InchDisplay]) {
+   /* if ([UIDeviceHardware IsDeviceHas4InchDisplay]) {
         NSLog(@"Device has 4 inch display");
-        imageView.image = [UIImage imageNamed:@"Credits@4inch.png"];
-    }
+        imageView.image = [UIImage imageNamed:@"Default-568h@2x.png"];
+    }*/
+    
+    
+    
 }
 
 - (void)viewDidUnload

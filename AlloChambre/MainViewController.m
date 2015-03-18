@@ -329,8 +329,17 @@
 #pragma mark - Public Methods
 
 - (IBAction)openCredits:(id)sender {
-    CreditsViewController *cView = [[CreditsViewController alloc] initWithNibName:@"CreditsViewController"
-                                                                           bundle:nil];
+    
+    NSString *nibName = @"CreditsViewController";
+    if ([UIDeviceHardware IsDeviceHas4InchDisplay]) {
+        nibName = @"CreditsViewController_iPhone5";
+    }
+    CreditsViewController *cView  = [[CreditsViewController alloc]
+                                        initWithNibName:nibName
+                                        bundle:nil];
+    
+    //CreditsViewController *cView = [[CreditsViewController alloc] initWithNibName:@"CreditsViewController"
+     //                                                                      bundle:nil];
     cView.view.frame=CGRectMake(cView.view.frame.origin.x, cView.view.frame.origin.y, cView.view.frame.size.width, cView.view.frame.size.height);
     [self.navigationController pushViewController:cView animated:YES];
     [cView release];
