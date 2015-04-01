@@ -324,7 +324,6 @@
     [noResults setHidden:YES];
     noResults.text = NSLocalizedString(@"NoResults", nil);;
     
-    
     [self.mapView setMapType:MKMapTypeStandard];
 	self.timesFired = 0;
     
@@ -343,6 +342,11 @@
         self.locationManager.delegate = self;
 		self.locationManager.desiredAccuracy = kCLLocationAccuracyBest; // kCLLocationAccuracyNearestTenMeters - kCLLocationAccuracyHundredMeters - kCLLocationAccuracyBest
         self.locationManager.distanceFilter = 10; // or whatever
+
+        if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+            [self.locationManager requestWhenInUseAuthorization];
+        }
+
         [self.locationManager startUpdatingLocation];
 
     }
