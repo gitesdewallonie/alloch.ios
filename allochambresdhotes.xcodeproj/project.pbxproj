@@ -14,9 +14,7 @@
 		042893CE15221E54001ADB96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 042893CD15221E54001ADB96 /* main.m */; };
 		042893D215221E54001ADB96 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 042893D115221E54001ADB96 /* AppDelegate.m */; };
 		042893F115221F1D001ADB96 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042893EF15221F1D001ADB96 /* MainViewController.m */; };
-		042893F215221F1D001ADB96 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042893F015221F1D001ADB96 /* MainViewController.xib */; };
 		042893F7152229F1001ADB96 /* CreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042893F5152229F1001ADB96 /* CreditsViewController.m */; };
-		042893F8152229F1001ADB96 /* CreditsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042893F6152229F1001ADB96 /* CreditsViewController.xib */; };
 		04C1D614152AB32B0001FDCA /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 04C1D612152AB32B0001FDCA /* pin.png */; };
 		04C1D615152AB32B0001FDCA /* pin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04C1D613152AB32B0001FDCA /* pin@2x.png */; };
 		04C1D619152AB3560001FDCA /* MyAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C1D618152AB3560001FDCA /* MyAnnotationView.m */; };
@@ -51,13 +49,13 @@
 		96874D131AC41A7D0049D619 /* icon-152.png in Resources */ = {isa = PBXBuildFile; fileRef = 96874D0C1AC41A7D0049D619 /* icon-152.png */; };
 		96874D141AC41A7D0049D619 /* icon-180.png in Resources */ = {isa = PBXBuildFile; fileRef = 96874D0D1AC41A7D0049D619 /* icon-180.png */; };
 		96874D151AC41A7D0049D619 /* icon-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 96874D0E1AC41A7D0049D619 /* icon-1024.png */; };
-		96CB25051AB86CDB0051A07A /* main_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CB25041AB86CDB0051A07A /* main_logo.png */; };
-		96CB25071AB87CD20051A07A /* CreditsViewController_iPhone5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96CB25061AB87CD20051A07A /* CreditsViewController_iPhone5.xib */; };
 		A85514E018FAF4870066CA4C /* background_568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A85514DF18FAF4870066CA4C /* background_568@2x.png */; };
 		A85514E518FBBD1B0066CA4C /* UIDeviceHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = A85514E418FBBD1B0066CA4C /* UIDeviceHardware.m */; };
-		A85E8E4518F6BC1700F34D66 /* MainViewController_iPhone5.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85E8E4418F6BC1700F34D66 /* MainViewController_iPhone5.xib */; };
-		A8ABD32818FC6BFC00C76E4A /* ResultViewController_iPhone5.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8ABD32718FC6BFC00C76E4A /* ResultViewController_iPhone5.xib */; };
+		A86052DF1ACF3CF8001BA98C /* CreditsViewController-AL.xib in Resources */ = {isa = PBXBuildFile; fileRef = A86052DD1ACF3CF8001BA98C /* CreditsViewController-AL.xib */; };
+		A884E4001AD1E4DC00F048F8 /* ResultViewController-AL.xib in Resources */ = {isa = PBXBuildFile; fileRef = A884E3FF1AD1E4DB00F048F8 /* ResultViewController-AL.xib */; };
+		A884E4021AD1ECEC00F048F8 /* DetailViewController-AL.xib in Resources */ = {isa = PBXBuildFile; fileRef = A884E4011AD1ECEC00F048F8 /* DetailViewController-AL.xib */; };
 		A8ABD32A18FC6F0300C76E4A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8ABD32918FC6F0300C76E4A /* QuartzCore.framework */; };
+		A8B7EA931ACEBE1E00CC239B /* MainViewController-AL.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8B7EA921ACEBE1E00CC239B /* MainViewController-AL.xib */; };
 		CE0C4053155A65F20003BE6C /* pin_current.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C4051155A65F20003BE6C /* pin_current.png */; };
 		CE0C4054155A65F20003BE6C /* pin_current@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C4052155A65F20003BE6C /* pin_current@2x.png */; };
 		CE17E9161535C39F003A7F4F /* loupe.png in Resources */ = {isa = PBXBuildFile; fileRef = CE17E9141535C39F003A7F4F /* loupe.png */; };
@@ -99,9 +97,7 @@
 		F558B1F91524781D005DD6A7 /* MainScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F558B1F61524781D005DD6A7 /* MainScrollView.m */; };
 		F558B1FA1524781D005DD6A7 /* SubScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F558B1F81524781D005DD6A7 /* SubScrollView.m */; };
 		F558B200152478CB005DD6A7 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F558B1FE152478CB005DD6A7 /* DetailViewController.m */; };
-		F558B201152478CB005DD6A7 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F558B1FF152478CB005DD6A7 /* DetailViewController.xib */; };
 		F5DBB7DB1523227400294EF9 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DBB7D91523227300294EF9 /* ResultViewController.m */; };
-		F5DBB7DC1523227400294EF9 /* ResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5DBB7DA1523227300294EF9 /* ResultViewController.xib */; };
 		F5DBB7E71523286600294EF9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DBB7E61523286600294EF9 /* MapKit.framework */; };
 		F5DBB7E91523286B00294EF9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DBB7E81523286B00294EF9 /* CoreLocation.framework */; };
 		F5DBB7F3152328D000294EF9 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DBB7F0152328D000294EF9 /* MBProgressHUD.m */; };
@@ -138,11 +134,9 @@
 		042893D115221E54001ADB96 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		042893EE15221F1D001ADB96 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		042893EF15221F1D001ADB96 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		042893F015221F1D001ADB96 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		042893F3152227B9001ADB96 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		042893F4152229F1001ADB96 /* CreditsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditsViewController.h; sourceTree = "<group>"; };
 		042893F5152229F1001ADB96 /* CreditsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditsViewController.m; sourceTree = "<group>"; };
-		042893F6152229F1001ADB96 /* CreditsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreditsViewController.xib; sourceTree = "<group>"; };
 		04C1D612152AB32B0001FDCA /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = "<group>"; };
 		04C1D613152AB32B0001FDCA /* pin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin@2x.png"; sourceTree = "<group>"; };
 		04C1D617152AB3560001FDCA /* MyAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnnotationView.h; sourceTree = "<group>"; };
@@ -189,14 +183,14 @@
 		96874D0C1AC41A7D0049D619 /* icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-152.png"; sourceTree = "<group>"; };
 		96874D0D1AC41A7D0049D619 /* icon-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-180.png"; sourceTree = "<group>"; };
 		96874D0E1AC41A7D0049D619 /* icon-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-1024.png"; sourceTree = "<group>"; };
-		96CB25041AB86CDB0051A07A /* main_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_logo.png; path = "../../../../Desktop/GDW ANDROID GIT/alloch.android/res/drawable-hdpi/main_logo.png"; sourceTree = "<group>"; };
-		96CB25061AB87CD20051A07A /* CreditsViewController_iPhone5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreditsViewController_iPhone5.xib; sourceTree = "<group>"; };
 		A85514DF18FAF4870066CA4C /* background_568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background_568@2x.png"; sourceTree = "<group>"; };
 		A85514E318FBBD1B0066CA4C /* UIDeviceHardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDeviceHardware.h; sourceTree = "<group>"; };
 		A85514E418FBBD1B0066CA4C /* UIDeviceHardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDeviceHardware.m; sourceTree = "<group>"; };
-		A85E8E4418F6BC1700F34D66 /* MainViewController_iPhone5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController_iPhone5.xib; sourceTree = "<group>"; };
-		A8ABD32718FC6BFC00C76E4A /* ResultViewController_iPhone5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultViewController_iPhone5.xib; sourceTree = "<group>"; };
+		A86052DD1ACF3CF8001BA98C /* CreditsViewController-AL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CreditsViewController-AL.xib"; sourceTree = "<group>"; };
+		A884E3FF1AD1E4DB00F048F8 /* ResultViewController-AL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "ResultViewController-AL.xib"; sourceTree = "<group>"; };
+		A884E4011AD1ECEC00F048F8 /* DetailViewController-AL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "DetailViewController-AL.xib"; sourceTree = "<group>"; };
 		A8ABD32918FC6F0300C76E4A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A8B7EA921ACEBE1E00CC239B /* MainViewController-AL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MainViewController-AL.xib"; sourceTree = "<group>"; };
 		A8BBD6DC18FD130B00565CFA /* icon-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-80.png"; sourceTree = "<group>"; };
 		CE0C4051155A65F20003BE6C /* pin_current.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin_current.png; sourceTree = "<group>"; };
 		CE0C4052155A65F20003BE6C /* pin_current@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin_current@2x.png"; sourceTree = "<group>"; };
@@ -243,10 +237,8 @@
 		F558B1F81524781D005DD6A7 /* SubScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubScrollView.m; sourceTree = "<group>"; };
 		F558B1FD152478CB005DD6A7 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		F558B1FE152478CB005DD6A7 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		F558B1FF152478CB005DD6A7 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		F5DBB7D81523227300294EF9 /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
 		F5DBB7D91523227300294EF9 /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
-		F5DBB7DA1523227300294EF9 /* ResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultViewController.xib; sourceTree = "<group>"; };
 		F5DBB7E61523286600294EF9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F5DBB7E81523286B00294EF9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		F5DBB7EF152328D000294EF9 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
@@ -382,7 +374,6 @@
 				966C14B71ACC00C1008C9303 /* Default-iPhone5.png */,
 				966C14B81ACC00C1008C9303 /* Default-iPhone6.png */,
 				966C14B91ACC00C1008C9303 /* Default-iPhone6+.png */,
-				96CB25041AB86CDB0051A07A /* main_logo.png */,
 				CE17E9141535C39F003A7F4F /* loupe.png */,
 				CE17E9151535C39F003A7F4F /* loupe@2x.png */,
 				CE8A30231535B88900DBD658 /* searchtext.png */,
@@ -514,7 +505,7 @@
 			children = (
 				F558B1FD152478CB005DD6A7 /* DetailViewController.h */,
 				F558B1FE152478CB005DD6A7 /* DetailViewController.m */,
-				F558B1FF152478CB005DD6A7 /* DetailViewController.xib */,
+				A884E4011AD1ECEC00F048F8 /* DetailViewController-AL.xib */,
 			);
 			name = DetailView;
 			sourceTree = "<group>";
@@ -537,8 +528,7 @@
 			children = (
 				042893EE15221F1D001ADB96 /* MainViewController.h */,
 				042893EF15221F1D001ADB96 /* MainViewController.m */,
-				042893F015221F1D001ADB96 /* MainViewController.xib */,
-				A85E8E4418F6BC1700F34D66 /* MainViewController_iPhone5.xib */,
+				A8B7EA921ACEBE1E00CC239B /* MainViewController-AL.xib */,
 			);
 			name = MainView;
 			sourceTree = "<group>";
@@ -548,8 +538,7 @@
 			children = (
 				042893F4152229F1001ADB96 /* CreditsViewController.h */,
 				042893F5152229F1001ADB96 /* CreditsViewController.m */,
-				042893F6152229F1001ADB96 /* CreditsViewController.xib */,
-				96CB25061AB87CD20051A07A /* CreditsViewController_iPhone5.xib */,
+				A86052DD1ACF3CF8001BA98C /* CreditsViewController-AL.xib */,
 			);
 			name = CreditsView;
 			sourceTree = "<group>";
@@ -559,8 +548,7 @@
 			children = (
 				F5DBB7D81523227300294EF9 /* ResultViewController.h */,
 				F5DBB7D91523227300294EF9 /* ResultViewController.m */,
-				F5DBB7DA1523227300294EF9 /* ResultViewController.xib */,
-				A8ABD32718FC6BFC00C76E4A /* ResultViewController_iPhone5.xib */,
+				A884E3FF1AD1E4DB00F048F8 /* ResultViewController-AL.xib */,
 				04F357051523799F00BF098A /* Custom Classes */,
 			);
 			name = ResultView;
@@ -691,21 +679,15 @@
 				042893CC15221E54001ADB96 /* InfoPlist.strings in Resources */,
 				96874D131AC41A7D0049D619 /* icon-152.png in Resources */,
 				96874D121AC41A7D0049D619 /* icon-120.png in Resources */,
-				042893F215221F1D001ADB96 /* MainViewController.xib in Resources */,
 				96874D111AC41A7D0049D619 /* icon-80.png in Resources */,
 				966C14C11ACC00C1008C9303 /* Default-iPhone5.png in Resources */,
 				966C14C51ACC00E7008C9303 /* Images.xcassets in Resources */,
 				96874D141AC41A7D0049D619 /* icon-180.png in Resources */,
-				042893F8152229F1001ADB96 /* CreditsViewController.xib in Resources */,
-				F5DBB7DC1523227400294EF9 /* ResultViewController.xib in Resources */,
 				04F357011523788900BF098A /* Placeholder.png in Resources */,
 				04F357251523998500BF098A /* circle.png in Resources */,
-				96CB25071AB87CD20051A07A /* CreditsViewController_iPhone5.xib in Resources */,
 				F558B1E815246027005DD6A7 /* GroupedRoomsViewController.xib in Resources */,
-				F558B201152478CB005DD6A7 /* DetailViewController.xib in Resources */,
 				F5138C291524A3BC005D20F8 /* buttonsBG.png in Resources */,
 				F5138C2A1524A3BC005D20F8 /* buttonsBG@2x.png in Resources */,
-				A8ABD32818FC6BFC00C76E4A /* ResultViewController_iPhone5.xib in Resources */,
 				F5138C361524A4A0005D20F8 /* gpsBtn.png in Resources */,
 				F5138C371524A4A0005D20F8 /* lit.png in Resources */,
 				A85514E018FAF4870066CA4C /* background_568@2x.png in Resources */,
@@ -719,22 +701,23 @@
 				04C1D614152AB32B0001FDCA /* pin.png in Resources */,
 				04C1D615152AB32B0001FDCA /* pin@2x.png in Resources */,
 				04C1D61B152AB4FF0001FDCA /* tes.xib in Resources */,
+				A86052DF1ACF3CF8001BA98C /* CreditsViewController-AL.xib in Resources */,
 				CEE18790152C3E1100F895E9 /* logo.png in Resources */,
 				966C14C21ACC00C1008C9303 /* Default-iPhone6.png in Resources */,
 				CEE18792152C433700F895E9 /* lecoq.png in Resources */,
 				96874D0F1AC41A7D0049D619 /* icon-40.png in Resources */,
 				CECF179E152CC43900EB8DB6 /* capacity.png in Resources */,
 				966C14C01ACC00C1008C9303 /* Default-iPhone4.png in Resources */,
-				96CB25051AB86CDB0051A07A /* main_logo.png in Resources */,
 				CECF179F152CC43900EB8DB6 /* capacity@2x.png in Resources */,
 				966C14C31ACC00C1008C9303 /* Default-iPhone6+.png in Resources */,
+				A8B7EA931ACEBE1E00CC239B /* MainViewController-AL.xib in Resources */,
 				CEBF5B0515357F07003F548A /* lecoq_reversed.png in Resources */,
-				A85E8E4518F6BC1700F34D66 /* MainViewController_iPhone5.xib in Resources */,
 				CEA3E74B1535AFA3000310AA /* background.png in Resources */,
 				CEA3E74C1535AFA3000310AA /* background@2x.png in Resources */,
 				CEA3E74E1535B0EF000310AA /* logo@2x.png in Resources */,
 				966C14BD1ACC00C1008C9303 /* Credits-iPhone6.png in Resources */,
 				CE8A30141535B28200DBD658 /* horizontal_bar.png in Resources */,
+				A884E4001AD1E4DC00F048F8 /* ResultViewController-AL.xib in Resources */,
 				CE8A30151535B28200DBD658 /* horizontal_bar@2x.png in Resources */,
 				CE8A301B1535B3E400DBD658 /* btn_hover.png in Resources */,
 				CE8A301C1535B3E400DBD658 /* btn_hover@2x.png in Resources */,
@@ -757,6 +740,7 @@
 				96874D151AC41A7D0049D619 /* icon-1024.png in Resources */,
 				CEEA4F6515C0120100D0AD55 /* ue_wallonie@2x.png in Resources */,
 				CEEA4F6615C0120100D0AD55 /* wallonie-bruxelles.jpg in Resources */,
+				A884E4021AD1ECEC00F048F8 /* DetailViewController-AL.xib in Resources */,
 				CEEA4F6715C0120100D0AD55 /* wallonie-bruxelles@2x.jpg in Resources */,
 				CEEA4F6815C0120100D0AD55 /* wallonie.png in Resources */,
 				CEEA4F6915C0120100D0AD55 /* wallonie@2x.png in Resources */,

@@ -39,7 +39,7 @@
                        self.detailTextLabel.frame.size.height);   
     self.detailTextLabel.frame = frame;
     
-    frame = CGRectMake(257, (cvf.size.height-20)/2 , 20, 20);
+    frame = CGRectMake(cvf.size.width - 16, (cvf.size.height-20)/2 , 20, 20);
     [_countLabel setFrame:frame];
     [_circleImageView setFrame:frame];
     
@@ -63,7 +63,7 @@
         
         _countLabel = [[UILabel alloc] init];
         [_countLabel setBackgroundColor:[UIColor clearColor]];
-        [_countLabel setTextAlignment:UITextAlignmentCenter];
+        [_countLabel setTextAlignment:NSTextAlignmentCenter];
         [_countLabel setFont:[UIFont fontWithName:@"Arial" size:14]];
         [self.contentView addSubview:_countLabel];
         

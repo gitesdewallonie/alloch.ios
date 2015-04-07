@@ -18,7 +18,7 @@
         self.labelNumber = [[[UILabel alloc] initWithFrame:CGRectMake(1, 3, 25,25)] autorelease];
         [self.labelNumber setBackgroundColor:[UIColor clearColor]];
         [self.labelNumber setFont:[UIFont fontWithName:@"Arial" size:15]];
-        [self.labelNumber setTextAlignment:UITextAlignmentCenter];
+        [self.labelNumber setTextAlignment:NSTextAlignmentCenter];
         [self addSubview:self.labelNumber];
         
          
@@ -46,7 +46,7 @@
 - (void)setNumber:(NSInteger)number {
     //NSLog(@"Number:%d", number);
 	self.resultNumber = number;
-    [self.labelNumber setText:[NSString stringWithFormat:@"%d", number]]    ;
+    [self.labelNumber setText:[NSString stringWithFormat:@"%d", (int)number]]    ;
 }
 
 @end

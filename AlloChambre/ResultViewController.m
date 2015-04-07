@@ -60,7 +60,7 @@
         [gView release];
         gView = nil;
     } else {
-        DetailViewController *dView = [[DetailViewController alloc] initWithNibName:@"DetailViewController"
+        DetailViewController *dView = [[DetailViewController alloc] initWithNibName:@"DetailViewController-AL"
                                             bundle:nil
                                                                     andAccomodation:[container getAccomodation]];
         [self.navigationController pushViewController:dView animated:YES];
@@ -422,7 +422,7 @@
         aV.frame = CGRectMake(aV.frame.origin.x, aV.frame.origin.y - self.view.frame.size.height, aV.frame.size.width, aV.frame.size.height);
 
         // Animate drop
-        [UIView animateWithDuration:0.5 delay:0.1*[aV resultNumber] options:UIViewAnimationCurveLinear animations:^{
+        [UIView animateWithDuration:0.5 delay:0.1*[aV resultNumber] options:UIViewAnimationOptionCurveLinear animations:^{
 
             aV.frame = endFrame;
 
@@ -534,7 +534,7 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    int count = [entries count];
+    NSInteger count = [entries count];
 	return count;
 }
 
@@ -555,8 +555,8 @@
         
         AccomodationContainer *container = [entries objectAtIndex:indexPath.row];
         Accomodation *accomodation = [container getAccomodation];
-        cell.textLabel.text = [NSString stringWithFormat:@"%d. %@", indexPath.row+1, accomodation.name];
-        [cell setCount:[container getCount]];
+        cell.textLabel.text = [NSString stringWithFormat:@"%ld. %@", indexPath.row+1, accomodation.name];
+        [cell setCount:(int)[container getCount]];
         
         // Only load cached images; defer new downloads until scrolling ends
         if (!accomodation.image)

@@ -220,7 +220,7 @@
         [self setClipsToBounds:YES];
         [self setDelegate:self];
         
-        maxPageNo = [imagesArray count];;
+        maxPageNo = (int)[imagesArray count];;
         currentTag = 1;
         
         //prePage = [self getNewSubScrollViewForPageNo:1];

@@ -22,6 +22,7 @@
 @property (retain, nonatomic) IBOutlet UIImageView *loupe;
 @property (retain, nonatomic) IBOutlet UIView *contentView;
 @property (retain, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (retain, nonatomic) IBOutlet NSLayoutConstraint *constraitToolbarYPadding;
 
 - (IBAction)openCredits:(id)sender;
 - (IBAction)geolocateMe:(id)sender;

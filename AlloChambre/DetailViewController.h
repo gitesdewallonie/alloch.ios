@@ -26,7 +26,7 @@
 }
 
 @property (nonatomic, retain) Accomodation *currentAccomodation;
-@property (nonatomic, retain) IBOutlet UIView *detailView;
+@property (nonatomic, retain) IBOutlet UIView *photoView;
 @property (retain, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (nonatomic, retain) IBOutlet UILabel *labelMinMax;
 @property (nonatomic, retain) IBOutlet UILabel *labelOwnerName;

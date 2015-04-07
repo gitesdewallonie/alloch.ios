@@ -76,12 +76,8 @@
             if ([self validateTextField]) {
                 
                 // Creating Instance of ResultView with the String entered in SearchBox
-                NSString *nibName = @"ResultViewController";
-                if ([UIDeviceHardware IsDeviceHas4InchDisplay]) {
-                    nibName = @"ResultViewController_iPhone5";
-                }
                 ResultViewController *resultView = [[ResultViewController alloc] 
-                                                    initWithNibName:nibName//@"ResultViewController"
+                                                    initWithNibName:@"ResultViewController-AL"
                                                     bundle:nil andSearchString:searchTF.text];
                 
                 
@@ -106,12 +102,8 @@
         } else {
             
             // Creating Instance of ResultView with the String entered in SearchBox
-            NSString *nibName = @"ResultViewController";
-            if ([UIDeviceHardware IsDeviceHas4InchDisplay]) {
-                nibName = @"ResultViewController_iPhone5";
-            }
             ResultViewController *resultView = [[ResultViewController alloc] 
-                                                initWithNibName:nibName//@"ResultViewController"
+                                                initWithNibName:@"ResultViewController-AL"
                                                 bundle:nil andSearchString:nil];        
             
 			if ([searchTF isFirstResponder]) {
@@ -174,14 +166,23 @@
 }
 
 
+- (void)updateConstraint {
+    UIWindow *window = [[[UIApplication sharedApplication] delegate] window];
+    int newY = (window.frame.size.height - (self.btnLookup.frame.origin.y + self.btnLookup.frame.size.height)) - 88;
+    self.constraitToolbarYPadding.constant = newY;
+    
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
-    [self.view addSubview:self.contentView];
-    ((UIScrollView *)self.view).contentSize = self.contentView.frame.size;
-
+//    [self.view addSubview:self.contentView];
+//    ((UIScrollView *)self.view).contentSize = self.contentView.frame.size;
+    [self updateConstraint];
     [self registerForNetworkReachabilityNotifications];
+    
+    
 
     self.navigationItem.backBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"HomeButtonTitle",nil) style:UIBarButtonItemStylePlain target:nil action:nil] autorelease];
     
@@ -225,6 +226,8 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    [super viewWillAppear:animated];
+    
 	[self restoreViewPosition];
 	if (! ([CLLocationManager locationServicesEnabled])
 		|| ( [CLLocationManager authorizationStatus] == kCLAuthorizationStatusDenied)) {
@@ -269,6 +272,7 @@
     [btnGeolocateMe release];
     [btnLookup release];
     [btnCredits release];
+    [_constraitToolbarYPadding release];
     [super dealloc];
 }
 
@@ -330,12 +334,8 @@
 
 - (IBAction)openCredits:(id)sender {
     
-    NSString *nibName = @"CreditsViewController";
-    if ([UIDeviceHardware IsDeviceHas4InchDisplay]) {
-        nibName = @"CreditsViewController_iPhone5";
-    }
     CreditsViewController *cView  = [[CreditsViewController alloc]
-                                        initWithNibName:nibName
+                                        initWithNibName:@"CreditsViewController-AL"
                                         bundle:nil];
     cView.view.frame=CGRectMake(cView.view.frame.origin.x, cView.view.frame.origin.y, cView.view.frame.size.width, cView.view.frame.size.height);
     [self.navigationController pushViewController:cView animated:YES];

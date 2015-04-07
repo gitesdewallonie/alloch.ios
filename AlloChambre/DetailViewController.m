@@ -10,7 +10,6 @@
 @implementation DetailViewController
 
 @synthesize currentAccomodation;
-@synthesize detailView;
 @synthesize scrollView = _scrollView;
 @synthesize labelMinMax = _labelMinMax;
 @synthesize labelOwnerName = _labelOwnerName;
@@ -32,19 +31,19 @@
     
     if (self.currentAccomodation.twoPersonBed > 0) {
         [self.imageViewBeds1 setImage:[UIImage imageNamed:@"lit.png"]];
-        [self.labelNumberOfBeds1 setText:[NSString stringWithFormat:@"%d", self.currentAccomodation.twoPersonBed]];
+        [self.labelNumberOfBeds1 setText:[NSString stringWithFormat:@"%ld", (long)self.currentAccomodation.twoPersonBed]];
         [self.imageViewBeds1 setHidden:NO];
         [self.labelNumberOfBeds1 setHidden:NO];
 		if (self.currentAccomodation.onePersonBed > 0) {
 	        [self.imageViewBeds2 setImage:[UIImage imageNamed:@"lit1p.png"]];
-	        [self.labelNumberOfBeds2 setText:[NSString stringWithFormat:@"%d", self.currentAccomodation.onePersonBed]];
+	        [self.labelNumberOfBeds2 setText:[NSString stringWithFormat:@"%ld", (long)self.currentAccomodation.onePersonBed]];
 	        [self.imageViewBeds2 setHidden:NO];
 	        [self.labelNumberOfBeds2 setHidden:NO];
 	    }
     }
 	else if (self.currentAccomodation.onePersonBed > 0) {
         [self.imageViewBeds1 setImage:[UIImage imageNamed:@"lit1p.png"]];
-        [self.labelNumberOfBeds1 setText:[NSString stringWithFormat:@"%d", self.currentAccomodation.onePersonBed]];
+        [self.labelNumberOfBeds1 setText:[NSString stringWithFormat:@"%ld", (long)self.currentAccomodation.onePersonBed]];
         [self.imageViewBeds1 setHidden:NO];
         [self.labelNumberOfBeds1 setHidden:NO];
     }
@@ -52,9 +51,9 @@
 }
 
 - (void)setupLabels {
-    [self.labelMinMax setText:[NSString stringWithFormat:@"%d/%d"
-                               , self.currentAccomodation.capacityMin
-                               , self.currentAccomodation.capacityMax ]];
+    [self.labelMinMax setText:[NSString stringWithFormat:@"%ld/%ld"
+                               , (long)self.currentAccomodation.capacityMin
+                               , (long)self.currentAccomodation.capacityMax ]];
     [self.labelOwnerName setText:[NSString stringWithFormat:@"%@ %@"
                                    , self.currentAccomodation.owner.title
                                    , self.currentAccomodation.owner.name]];
@@ -96,38 +95,26 @@
 
 #pragma mark - View lifecycle
 
+- (void)addPhotoScroller {
+    _photoScroller = [[MainScrollView alloc] initWithFrame:self.photoView.frame
+                                            andImagesArray:self.currentAccomodation.photosArray];
+    [self.photoView addSubview:_photoScroller];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     // [self.view setBackgroundColor:kDetailBGColor];
-    [[self view] setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]]];
+//    [[self view] setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]]];
     self.title = NSLocalizedString(@"DetailViewTitle", nil);
     
-    int size = 436;
-    if ([UIDeviceHardware IsDeviceHas4InchDisplay]) {
-        size = 524;
-    }
-    
-    _photoScroller = [[MainScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, size/2) andImagesArray:self.currentAccomodation.photosArray];
-    [self.scrollView addSubview:_photoScroller];
-    
-    self.detailView.frame = CGRectMake(0, _photoScroller.frame.size.height, 320, self.detailView.frame.size.height);
-    [self.scrollView addSubview:self.detailView];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self addPhotoScroller];
+    });
     
     [self setupLabels];
     [self setUPNumberOfBeds];
-    
-	NSInteger descriptionBottomY = _photoScroller.frame.size.height+280+self.labelDescription.frame.size.height;
-    [self.scrollView setContentSize:CGSizeMake(320, descriptionBottomY)];
-
-	CGRect coqFrame = [self.coq frame];
-	coqFrame.origin.y = descriptionBottomY - 465;
-	self.coq.frame = coqFrame;
-
-	CGRect coqReversedFrame = [self.coq_reversed frame];
-	coqReversedFrame.origin.y = descriptionBottomY - 465 + self.coq_reversed.frame.size.height;
-	self.coq_reversed.frame = coqReversedFrame;
 }
 
 - (void)viewDidUnload
@@ -151,7 +138,6 @@
     self.labelAddress = nil;
     self.labelZipAndCity = nil;
     self.labelPrice = nil;
-    self.detailView = nil;
     self.labelAddress = nil;
     self.labelDescription = nil;
     self.labelNumberOfBeds1 = nil;

@@ -23,11 +23,7 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    NSString *nibName = @"MainViewController";
-    if ([UIDeviceHardware IsDeviceHas4InchDisplay]) {
-        NSLog(@"Device is iPhone 5");
-        nibName = @"MainViewController_iPhone5";
-    }
+    NSString *nibName = @"MainViewController-AL";
     self.viewController = [[[MainViewController alloc] initWithNibName:nibName bundle:nil] autorelease];
     
     // Setting UP Main Navigation Controller for App

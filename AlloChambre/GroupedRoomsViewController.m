@@ -187,7 +187,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];    
     
     Accomodation *accomodation = [entries objectAtIndex:indexPath.row];
-    DetailViewController *dView = [[DetailViewController alloc] initWithNibName:@"DetailViewController"
+    DetailViewController *dView = [[DetailViewController alloc] initWithNibName:@"DetailViewController-AL"
                                                                          bundle:nil
                                                                 andAccomodation:accomodation];
     [self.navigationController pushViewController:dView animated:YES];
