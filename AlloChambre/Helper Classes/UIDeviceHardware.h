@@ -10,5 +10,5 @@
 - (NSString *) platform;
 - (NSString *) platformString;
 + (BOOL)IsDeviceHas4InchDisplay;
-
++ (BOOL)isDeviceiPhone4;
 @end

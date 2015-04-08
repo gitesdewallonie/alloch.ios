@@ -98,4 +98,31 @@
     return result;
 }
 
++ (BOOL)isDeviceiPhone4 {
+    UIDeviceHardware *hw = [[UIDeviceHardware alloc] init];
+    BOOL result = NO;
+
+    if ([[hw platformString] isEqualToString:@"iPhone 4"]
+        || [[hw platformString] isEqualToString:@"iPhone 4s"]
+        ) {
+        result = YES;
+    }
+    else if([[hw platformString] isEqualToString:@"Simulator"]) {
+        CGRect screenBounds = [[UIScreen mainScreen] bounds];
+        if (screenBounds.size.height == 480) {
+            // code for 3.5-inch screen
+            result = YES;
+        } else {
+            // code for larger screens
+            result = NO;
+        }
+    }
+
+    [hw release];
+    hw = nil;
+
+    return result;
+
+}
+
 @end

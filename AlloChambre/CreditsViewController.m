@@ -4,6 +4,7 @@
 //
 
 #import "CreditsViewController.h"
+#import "UIDeviceHardware.h"
 
 @implementation CreditsViewController
 @synthesize scrollView;
@@ -36,9 +37,21 @@
 
 #pragma mark - View lifecycle
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+//    NSLog(@"Loaded Image : %f, %f", self.imageView.image.size.width, self.imageView.image.size.height);
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    // this check is for iphone 4 (3.5 inch) only : for other devices,
+    // image sizes will be adjusted using image asset catalog
+    if ([UIDeviceHardware isDeviceiPhone4]) {
+        [self.imageView setImage:[UIImage imageNamed:@"Credits-iPhone3.png"]];
+    }
+
 }
 
 - (void)viewDidUnload
